@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alura Challenges">
+    <meta name="keywords" content="html5,css3,javascript"/>
+    <link rel="stylesheet" href="../css/estilos.css"/>
+    <title>Alura Challenge</title>
+</head>
+<body>
+    <header>
+        <img id="icono" src="../imagenes/Logo.png" alt="Logo Alura" title="alura"/>
+    </header>
+    
+    <section id="menu">
+        <div id="entrada">
+            <textarea id="texto" name="encryptar" spellcheck="false" placeholder="Ingrese el texto Aqui" rows="7" cols="50"></textarea> 
+            <div>
+                <div>
+                    <p><img src="../imagenes/bi_exclamation-circle-fill.png"/>   Solo letras minúsculas y sin acentos</p>
+                </div>
+                <button id="encriptar" onclick="Encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="Desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div id="salida">
+            <div id="imagen">
+                <img src="../imagenes/Muñeco.png"/>
+                <h2>Ningun mensaje fue <br/>encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="mostrar" name="desencryptar" spellcheck="false" rows="11" cols="25" readonly="true"></textarea> 
+            <button id="btnCopiar" onclick="Copiar()">Copiar</button>
+        </div>
+        
+    </section>
+    <div id="logo_autor">
+        <img id="creador" src="../imagenes/creador.png">
+    </div>
+    
+    
+    <script src="../javasacript/encriptar.js"></script>
+</body>
+</html>
