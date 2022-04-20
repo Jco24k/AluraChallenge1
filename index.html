@@ -16,7 +16,7 @@
     
     <section id="menu">
         <div id="entrada">
-            <textarea id="texto" name="encryptar" spellcheck="false" placeholder="Ingrese el texto Aqui" rows="7" cols="50"></textarea> 
+            <textarea id="texto" name="encryptar" onkeyup="this.value = solo_minusculas(this.value)" spellcheck="false" placeholder="Ingrese el texto Aqui" rows="7" cols="50"></textarea> 
             <div>
                 <div>
                     <p><img src="imagenes/bi_exclamation-circle-fill.png"/>   Solo letras minúsculas y sin acentos</p>

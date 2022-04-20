@@ -60,4 +60,12 @@ function ocultar(opcion){
     }
 }
 
-
+function solo_minusculas(texto){
+    //FORMA 1
+    let validos = "abcdefghijklmnñopqrstuvwxyz ";
+    let text = ""
+    for(let i of texto){
+        text += (validos.includes(i)) ? i : "";
+    }
+    return text;
+}
